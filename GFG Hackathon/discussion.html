@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Finance Discussion Forum</title>
+    <!-- <link rel="stylesheet" type="text/css" href="discussion.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
+</head>
+
+<body>
+    <div id="wrapper" class="h-screen w-screen overflow-hidden flex flex-col">
+        <header>
+            <h1 class="text-center text-6xl">Finance Discussion Forum</h1>
+        </header>
+
+        <main class="w-screen flex flex-col mt-5 border-t-deepBlue justify-center items-center">
+            <section id="questions" class="w-full">
+
+
+                <form id="question-form" class="w-full">
+                    <div class="mb-4 flex  flex-col border-4 w-full items-center gap-4 text-lg">
+                        <div class="uname mt-5 flex gap-5">
+
+                            <label class="px-4" for="username-input">Enter Username :</label>
+                            <input
+                                class="rounded-sm border-none bg-blue-300 bg-opacity-50 px-6 h-10 text-inherit placeholder-gray-500 shadow-lg outline-none backdrop-blur-md"
+                                id="username-input" type="text" name="name" placeholder="Enter Username" />
+
+                            <label class="px-4" for="question-input">Ask a question :</label>
+                            <input
+                                class="rounded-sm border-none bg-blue-300 bg-opacity-50 px-6 h-10 w- text-inherit placeholder-gray-500 shadow-lg outline-none backdrop-blur-md"
+                                id="question-input" type="text" name="name" placeholder="Ask a question" />
+
+
+
+                        </div>
+
+                        <div class="flex justify-center text-lg mb-3 text-black">
+                            <button type="submit" id="back"
+                                class="rounded-3xl bg-black bg-opacity-50 px-10 py-2 text-white shadow-xl backdrop-blur-md transition-colors duration-300 hover:bg-red-600">Submit</button>
+
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <div class="m-8 flex justify-center text-lg text-black">
+            <button type="submit" id="back" onclick="location.href = 'index.html'"
+                class="rounded-3xl bg-black bg-opacity-50 px-10 py-2 text-white shadow-xl backdrop-blur-md transition-colors duration-300 hover:bg-red-600">Back</button>
+
+        </div>
+
+        <ul id="question-list">
+            <h2>Questions</h2>
+            <!-- Questions will be added dynamically using JavaScript -->
+        </ul>
+        <footer class="place-self-end ">
+            <p>&copy; 2023 Finance Discussion Forum</p>
+        </footer>
+    </div>
+    <script src="discussion.js"></script>
+</body>
+
+</html>

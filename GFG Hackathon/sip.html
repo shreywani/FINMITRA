@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
+    <script src="/calc.js"></script>
+    <title>SIP CALCULATOR</title>
+</head>
+
+<body>
+    <div class="flex flex-col h-screen w-full items-center justify-center bg-gray-900 bg-cover bg-no-repeat"
+        style="background-image:url('/images/background.jpg')">
+        <div class="rounded-xl bg-gray-800 bg-opacity-50 px-16 py-10 w-1/2 shadow-lg backdrop-blur-md max-sm:px-8">
+            <div class="text-black">
+                <div class="mb-8 flex flex-col items-center">
+                    <img src="/images/emi_calculator.png" width="150"
+                        alt="" srcset="" />
+                    <h1 class="mb-2 text-2xl">SIP Calculator</h1>
+                    <span class="text-gray-300">Enter Details</span>
+                </div>
+               
+                    <div class="mb-4 flex flex-col gap-4 text-lg">
+                        <label class="px-4" for="investment">Monthly Investment Amount (in Rupees):</label>
+                        <input
+                            class="rounded-sm border-none bg-blue-300 bg-opacity-50 px-6 py-2 text-inherit placeholder-gray-500 shadow-lg outline-none backdrop-blur-md"
+                            id="investment" type="number" name="name" placeholder="Monthly Investment Amount (in Rupees)" />
+                    </div>
+                    <div class="mb-4 flex flex-col gap-4 text-lg">
+                        <label class="px-4" for="current-age">Current Age</label>
+                        <input
+                            class="rounded-sm border-none bg-blue-300 bg-opacity-50 px-6 py-2 text-inherit placeholder-gray-500 shadow-lg outline-none backdrop-blur-md"
+                            id="current-age" type="number" name="name" placeholder="Current Age" />
+                    </div>
+                    <div class="mb-4 flex flex-col gap-4 text-lg">
+                        <label class="px-4" for="retirement-age">Retirement Age:</label>
+                        <input
+                            class="rounded-sm border-none bg-blue-300 bg-opacity-50 px-6 py-2 text-inherit placeholder-gray-500 shadow-lg outline-none backdrop-blur-md"
+                            id="retirement-age" type="number" name="name" placeholder="Retirement Age" />
+                    </div>
+
+                    <div class="mb-4 flex flex-col gap-4 text-lg">
+                        <label class="px-4" for="interest-rate">Annual Intrest Rate (in %):</label>
+                        <input
+                            class="rounded-sm border-none bg-blue-300 bg-opacity-50 px-6 py-2 text-inherit placeholder-gray-500 shadow-lg outline-none backdrop-blur-md"
+                            id="interest-rate" type="number" name="name" placeholder="Annual Interest Rate (in %)" />
+                    </div>
+
+                    <div class="mt-8 flex justify-center text-lg text-black">
+                        <button type="submit"
+                            class="rounded-3xl bg-black bg-opacity-60 px-10 py-2 text-white shadow-xl backdrop-blur-md transition-colors duration-300 hover:bg-black    " onclick="calculate_sip()">Calculate SIP</button>
+                            
+                    </div>
+                    <p id="result" class="text-center py-3"></p>
+               
+            </div>
+        </div>
+        <div class="mt-8 flex justify-center text-lg text-black">
+            <button type="submit" id = "back" onclick="location.href = 'calculators.html'"
+                class="rounded-3xl bg-black bg-opacity-50 px-10 py-2 text-white shadow-xl backdrop-blur-md transition-colors duration-300 hover:bg-red-600">Back</button>
+                
+        </div>
+    </div>
+
+   
+
+</body>
+
+</html>
